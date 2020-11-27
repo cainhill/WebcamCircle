@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Electron boilerplate</title>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body style="-webkit-app-region: drag">
+		<!--You can change the dimensions of the camera with height and weight, (text align and margin is just for center the image)-->
+		<div id="camdemo" style="width: 300px; height: 300px; text-align: center; margin: 0 auto;"></div>
+		<br>
+		<div style="text-align:center;">
+		    <input type="button" id="start" value="Start / Stop"/>
+		</div>
+	</body>
+	<script>
+		// https://ourcodeworld.com/articles/read/134/how-to-use-the-camera-with-electron-framework-create-a-snapshot-and-save-the-image-on-the-system
+		// A flag to know when start or stop the camera
+		var enabled = false;
+		// Use require to add webcamjs
+		var WebCamera = require("webcamjs");
+
+		document.getElementById("start").addEventListener('click',function(){
+		   if(!enabled){ // Start the camera !
+		     enabled = true;
+		     WebCamera.attach('#camdemo');
+		     console.log("The camera has been started");
+		   }else{ // Disable the camera !
+		     enabled = false;
+		     WebCamera.reset();
+		    console.log("The camera has been disabled");
+		   }
+		},false);
+	</script>
+	<style>
+		div {
+			border-radius: 50%;
+			overflow: hidden;
+		}
+		/* https://stackoverflow.com/questions/15167545/how-to-crop-a-rectangular-image-into-a-square-with-css */
+		div video {
+			position: relative;
+			height: 100% !important;
+			width: auto !important;
+			left: 50%;
+			transform: translate3d( -50%, 0, 0 );
+		}
+		/* https://www.electronjs.org/docs/api/frameless-window */
+		input[type="button"] {
+		  -webkit-app-region: no-drag;
+		}
+	</style>
+</html>
