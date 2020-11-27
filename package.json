@@ -1,0 +1,56 @@
+{
+	"name": "webcam-circle",
+	"productName": "Webcam Circle",
+	"version": "0.0.1",
+	"description": "Show your webcam view in a circle above all other windows",
+	"license": "MIT",
+	"repository": "cainhill/WebcamCircle",
+	"author": {
+		"name": "Cain Hill",
+		"email": "cainhill@gmail.com",
+		"url": "https://cainhill.com.au"
+	},
+	"scripts": {
+		"postinstall": "electron-builder install-app-deps",
+		"lint": "xo",
+		"test": "npm run lint",
+		"start": "electron .",
+		"pack": "electron-builder --dir",
+		"dist": "electron-builder --windows",
+		"release": "np"
+	},
+	"dependencies": {
+		"electron-context-menu": "^0.15.0",
+		"electron-debug": "^3.0.0",
+		"electron-store": "^5.1.0",
+		"electron-unhandled": "^3.0.0",
+		"electron-updater": "^4.0.6",
+		"electron-util": "^0.13.0",
+		"git": "^0.1.5",
+		"webcamjs": "^1.0.26"
+	},
+	"comment_1": "https://github.com/electron-userland/electron-builder/issues/4157#issuecomment-596419610",
+	"devDependencies": {
+		"electron": "6.0.0",
+		"electron-builder": "^21.2.0",
+		"np": "^5.0.3",
+		"xo": "^0.25.3"
+	},
+	"xo": {
+		"envs": [
+			"node",
+			"browser"
+		]
+	},
+	"np": {
+		"publish": false,
+		"releaseDraft": false
+	},
+	"build": {
+		"appId": "com.cainhill.WebcamCircle",
+		"win": {
+			"target": "portable",
+			"icon": "build/icon.png"
+		}
+	}
+}
