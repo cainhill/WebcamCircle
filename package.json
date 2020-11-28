@@ -1,7 +1,7 @@
 {
 	"name": "webcam-circle",
-	"productName": "Webcam Circle",
-	"version": "0.0.1",
+	"productName": "WebcamCircle",
+	"version": "0.0.2",
 	"description": "Show your webcam view in a circle above all other windows",
 	"license": "MIT",
 	"repository": "cainhill/WebcamCircle",
@@ -50,7 +50,7 @@
 		"appId": "com.cainhill.WebcamCircle",
 		"win": {
 			"target": "portable",
-			"icon": "build/icon.png"
+			"icon": "build/icon.ico"
 		}
 	}
 }
