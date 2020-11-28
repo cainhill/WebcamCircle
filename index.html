@@ -7,8 +7,9 @@
 	</head>
 	<body style="-webkit-app-region: drag">
 			<div class="controls">
-				<button id="button">Get Camera</button>
+				<p>Select your webcam:</p>
 				<select id="select"></select>
+				<button id="button">Start</button>
 			</div>
 			<div id="crop" class="hide">
 				<video id="video" autoplay="" playsinline=""></video>
@@ -19,11 +20,15 @@
 		button, select {
 			-webkit-app-region: no-drag;
 		}
+		p {
+			padding-top: 10px;
+	    margin: 0;
+		}
 		.controls {
 			text-align: center;
 			width: 300px;
 			height: 300px;
-			background: #fff;
+			background: #f2f2f2;
 			margin: 15px auto;
 		}
 		.hide {
@@ -31,7 +36,7 @@
 		}
 		#select {
 			display: block;
-			margin: 5px auto;
+			margin: 10px auto;
 			width: 250px;
 		}
 		/* https://stackoverflow.com/questions/15167545/how-to-crop-a-rectangular-image-into-a-square-with-css */
