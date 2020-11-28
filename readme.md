@@ -1,87 +1,46 @@
-# electron-boilerplate
+![](images/header.png)
 
-> Boilerplate to kickstart creating an app with [Electron](https://github.com/electron/electron)
+Display your webcam video as a floating circle above your other content.
 
-See [awesome-electron](https://github.com/sindresorhus/awesome-electron) for more useful Electron resources.
+Great for workshop presenters and streamers who want to enhance their screenshare.
 
-See [Caprine](https://github.com/sindresorhus/caprine) for a production app based on this boilerplate.
+<img src="images/screenshot.png" width="800" />
 
+<br />
 
-## Features
+## 📝 Usage
 
-- [`electron-builder`](https://www.electron.build) fully set up to create cross-platform builds
-- [Builds the app on Travis](https://www.electron.build/multi-platform-build.html)
-- [Silent auto-updates](https://www.electron.build/auto-update.html)
-- App menu that adheres to the system user interface guidelines
-- [Config handling](https://github.com/sindresorhus/electron-store)
-- [Context menu](https://github.com/sindresorhus/electron-context-menu)
-- [User-friendly handling of unhandled errors](https://github.com/sindresorhus/electron-unhandled)
-- Easily publish new versions to GitHub Releases
-- And much more!
+1. Use your preferred tool e.g. Zoom / MsTeams / YouTube to share your screen and audio
+    - Make sure to leave your webcam turned off on these apps
+2. Then run WebcamCircle and use the dropdown box to select your preferred webcam
+3. Once you select this webcam, click "Get Camera" and WebcamCircle will show your video as a floating circle above your other content
+4. Use can drag-and-drop to move WebcamCircle around your screen
+5. Give a great presentation
 
+<br />
 
-## Getting started
+## ⚠️ Limitations
 
-**Click the "Use this template" button.**
+Please make sure WebcamCircle is the only app that is trying to use your web camera at any one time. This means that if you are using MsTeams, then you should turn off your web camera in MsTeams **before** starting WebcamCircle.
 
-Alternatively, create a new directory and then run:
+WebcamCircle has been built and tested on Windows 10 only.
 
-```
-$ curl -fsSL https://github.com/sindresorhus/electron-boilerplate/archive/master.tar.gz | tar -xz --strip-components 1
-```
+<br />
+	
+## ⬇️ Download and Run
 
-There's also a [Yeoman generator](https://github.com/sindresorhus/generator-electron).
+WebcamCircle runs on Windows without needing to install it.
 
+<br />
 
----
+## 🔍 Key Words
 
-**Remove everything from here and above**
+Web Camera / Circle / Overlay / Float / Presentation / Walkthrough / Streaming
 
----
+<br />
 
+## 👍 Credits and Attributions
 
-# App Name
-
-> The best app ever
-
-
-## Install
-
-*macOS 10.10+, Linux, and Windows 7+ are supported (64-bit only).*
-
-**macOS**
-
-[**Download**](https://github.com/user/repo/releases/latest) the `.dmg` file.
-
-**Linux**
-
-[**Download**](https://github.com/user/repo/releases/latest) the `.AppImage` or `.deb` file.
-
-*The AppImage needs to be [made executable](http://discourse.appimage.org/t/how-to-make-an-appimage-executable/80) after download.*
-
-**Windows**
-
-[**Download**](https://github.com/user/repo/releases/latest) the `.exe` file.
-
-
----
-
-
-## Dev
-
-Built with [Electron](https://electronjs.org).
-
-### Run
-
-```
-$ npm install
-$ npm start
-```
-
-### Publish
-
-```
-$ npm run release
-```
-
-After Travis finishes building your app, open the release draft it created and click "Publish".
+* [Sindre Sorhus](https://github.com/sindresorhus) - [Electron Boilerplate](https://github.com/sindresorhus/electron-boilerplate)
+* [Phil Nash](https://github.com/philnash) - [Code to let user select and connect to webcam](https://github.com/philnash/mediadevices-camera-selection/blob/master/app.js)
+* [Alyibel Colmenares](https://pixabay.com/users/alyibel-3625842) - [Image for use in screenshot](https://pixabay.com/photos/entrepreneur-computer-man-office-2326419)
