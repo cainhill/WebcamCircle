@@ -1,87 +1,64 @@
-# electron-boilerplate
+<br />
 
-> Boilerplate to kickstart creating an app with [Electron](https://github.com/electron/electron)
+![](images/header.png)
 
-See [awesome-electron](https://github.com/sindresorhus/awesome-electron) for more useful Electron resources.
+Display your webcam video as a floating circle above your other content.
 
-See [Caprine](https://github.com/sindresorhus/caprine) for a production app based on this boilerplate.
+Great for workshop presenters and streamers who want to enhance their screenshare.
 
+<br />
 
-## Features
+<img src="images/screenshot.png" width="800" />
 
-- [`electron-builder`](https://www.electron.build) fully set up to create cross-platform builds
-- [Builds the app on Travis](https://www.electron.build/multi-platform-build.html)
-- [Silent auto-updates](https://www.electron.build/auto-update.html)
-- App menu that adheres to the system user interface guidelines
-- [Config handling](https://github.com/sindresorhus/electron-store)
-- [Context menu](https://github.com/sindresorhus/electron-context-menu)
-- [User-friendly handling of unhandled errors](https://github.com/sindresorhus/electron-unhandled)
-- Easily publish new versions to GitHub Releases
-- And much more!
+<br />
 
+## 📝 Usage
 
-## Getting started
+1. Use your preferred tool e.g. Zoom / MsTeams / YouTube to share your screen and audio
+    - **Make sure to leave your webcam turned off within these apps**
+2. Run WebcamCircle
 
-**Click the "Use this template" button.**
+   ![](images/select.jpg)
+3. Use the dropdown box to select your preferred webcam
+4. Once you select this webcam, click "Start" and WebcamCircle will show your video as a floating circle above your other content
 
-Alternatively, create a new directory and then run:
+5. Use can drag-and-drop to move WebcamCircle around your screen
+6. Give a great presentation
 
-```
-$ curl -fsSL https://github.com/sindresorhus/electron-boilerplate/archive/master.tar.gz | tar -xz --strip-components 1
-```
+<br />
 
-There's also a [Yeoman generator](https://github.com/sindresorhus/generator-electron).
+## ⚠️ Limitations
 
+Please make sure WebcamCircle is the only app that is trying to use your web camera at any one time. This means that if you are using MsTeams, then you should turn off your web camera in MsTeams **BEFORE** starting WebcamCircle.
 
----
+WebcamCircle has been built and tested on Windows 10 only.
 
-**Remove everything from here and above**
+<br />
+	
+## ⬇️ Download and Run
 
----
+Use the link below to download the latest copy of WebcamCircle:
 
+[<img src="images/download.png" height="40">](https://github.com/cainhill/WebcamCircle/releases/download/0.0.2/WebcamCircle.0.0.2.exe)
 
-# App Name
+<br />
 
-> The best app ever
+## 🔍 Key Words
 
+Web Camera / Circle / Overlay / Float / Presentation / Walkthrough / Streaming
 
-## Install
+<br />
 
-*macOS 10.10+, Linux, and Windows 7+ are supported (64-bit only).*
+## 👍 Credits and Attributions
 
-**macOS**
+* [Sindre Sorhus](https://github.com/sindresorhus) - [Electron Boilerplate](https://github.com/sindresorhus/electron-boilerplate)
+* [Phil Nash](https://github.com/philnash) - [Code to let user select and connect to webcam](https://github.com/philnash/mediadevices-camera-selection/blob/master/app.js)
+* [Alyibel Colmenares](https://pixabay.com/users/alyibel-3625842) - [Image used in screenshot](https://pixabay.com/photos/entrepreneur-computer-man-office-2326419)
 
-[**Download**](https://github.com/user/repo/releases/latest) the `.dmg` file.
+<br />
 
-**Linux**
+## 🎨 License
 
-[**Download**](https://github.com/user/repo/releases/latest) the `.AppImage` or `.deb` file.
+Usage is provided under the MIT License. See LICENSE for the full details.
 
-*The AppImage needs to be [made executable](http://discourse.appimage.org/t/how-to-make-an-appimage-executable/80) after download.*
-
-**Windows**
-
-[**Download**](https://github.com/user/repo/releases/latest) the `.exe` file.
-
-
----
-
-
-## Dev
-
-Built with [Electron](https://electronjs.org).
-
-### Run
-
-```
-$ npm install
-$ npm start
-```
-
-### Publish
-
-```
-$ npm run release
-```
-
-After Travis finishes building your app, open the release draft it created and click "Publish".
+<br />
