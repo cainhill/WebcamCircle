@@ -22,7 +22,7 @@ Great for workshop presenters and streamers who want to enhance their screenshar
 3. Use the dropdown box to select your preferred webcam
 4. Once you select this webcam, click "Start" and WebcamCircle will show your video as a floating circle above your other content
 
-5. Use can drag-and-drop to move WebcamCircle around your screen
+5. You can drag-and-drop to move WebcamCircle around your screen
 6. Give a great presentation
 
 <br />
