@@ -2,6 +2,8 @@
 
 <img src="https://i.ibb.co/VjLnGy9/Icon-Webcam-Circle.png" height="120" />
 
+<br />
+
 Display your webcam video as a floating circle above your other content.
 
 Great for workshop presenters and streamers who want to enhance their screenshare.
