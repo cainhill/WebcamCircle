@@ -1,6 +1,6 @@
 <br />
 
-![](images/header.png)
+<img src="https://i.ibb.co/VjLnGy9/Icon-Webcam-Circle.png" height="120" />
 
 Display your webcam video as a floating circle above your other content.
 
